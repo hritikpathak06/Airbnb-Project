@@ -1,0 +1,51 @@
+{{>header}}
+
+<body>
+    {{>navbar}}
+
+    <div class="book_form">
+        <div class="last_form">
+            <div class="form_left">
+                <div class="container text-center">
+                    <div class="row row-cols-2">
+                        <div class="col"><img src="/images/hot.jpg" alt=""></div>
+                        <div class="col"><img src="/images/hotel1.webp" alt=""></div>
+                        <div class="col"><img src="/images/hot2.jpg" alt=""></div>
+                        <div class="col"><img src="/images/hot3.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_right">
+                <h1>Book the ticekt now!!😊</h1>
+                <h3>Please select the payment option!</h3>
+                <div class="box_form">
+                    <h1>$12500, get upto discount of <span>15%</span></h1>
+                    <div class="form_fill">
+                        <form action="/register" method="POST">
+                        <input type="date" name="checkin">check_in
+                        <input type="date" name="checkout">checkout
+                    </div>
+                    <div class="form_fill option">
+                        <label for="guest">Add Guests:</label>
+                        <select id="guest" name="guest">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="3+">More than 3</option>
+                        </select>
+                    </div>
+                    <div class="form_fill book-ticket">
+                        <input type="submit" value="Book Now">
+                    </div>
+                    </form>
+                    <div class="result">
+                        <p>thanks! you will be soon notified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

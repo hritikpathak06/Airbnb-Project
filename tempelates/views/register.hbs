@@ -1,0 +1,42 @@
+{{>header}}
+<body>
+ <div class="signup">
+    {{>navbar}}
+    <h1>Sign Up!!</h1>
+    <p>Please fill the form properly</p>
+    <div class="main_form">
+       <form action="/register" method="POST">
+       <div class="form-input">
+        <input type="text" placeholder="First name" name="firstName">
+          <input type="text" placeholder="Last name" name="lastName">
+          
+       </div>
+     <div class="form-input">
+        {{!-- <input type="text" placeholder="Last name" name="lastName"> --}}
+        <input type="email" placeholder="Email" name="email">
+          <input type="password" placeholder="password" name="password">
+       </div>
+        <div class="form-input">
+        <input type="number" placeholder="Enter your number" name="number">
+          <input type="password" placeholder="Confirm password" name="cpassword">
+       </div>
+        <div class="form-input">
+        <input type="number" placeholder="Enter your age" name="age">
+       </div>
+       <div class="form-gender">
+          <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" class="radio-btn">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" class="
+        radio-btn">
+       </div>
+       <div class="form-input btn">
+         <input type="submit" value="Submit">
+       </div>
+       </div>
+       </form>
+    </div>
+ </div>
+ {{>footer}} 
+</body>
+</html>

@@ -1,0 +1,26 @@
+{{>header}}
+<body>
+    {{>navbar}}
+    <div class="login_page">
+        <div class="main_page">
+            <div class="profile_page">
+
+            </div>
+            <div class="content_page">
+              <form action="/login" method="POST">
+              <div class="email_id">
+                <input type="email" placeholder="Enter your email" name="email">
+              </div>
+              <div class="pass_id">
+                <input type="password" placeholder="Enter your password" name="password">
+              </div>
+              <div class="submit_id">
+                <input type="submit" value="Login">
+              </div>
+              </form>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>

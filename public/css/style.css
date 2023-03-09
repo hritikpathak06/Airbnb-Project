@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* *********************************************************************************************** */
+h3{
+    color: yellow;
+}
+body{
+    background-color: lightblue;
+}
+.navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    position:sticky;
+}
+.navbar .container-fluid .navbar-brand{
+    color: red;
+    font-size: 1.3rem;
+}
+ .navbar .container-fluid a{
+    color: white;
+}
+
+.navbar .container-fluid .navbar-collapse .dropdown-menu li {
+    background-color: black;
+}
+/* *********************************************************************************************** */
+.main_header{
+    height: 80vh;
+    width: 100%;
+    background-color: beige;
+}
+
+.main_header .headline h1{
+    color: blueviolet;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.main_header .headline p{
+    color: gray;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main_header img{
+    height: 15rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.main_header .row h1{
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+.main_header .row p{
+    margin-left: 10rem;
+}
+/* *********************************************************************************************** */
+.footer{
+    position: absolute;
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  /* margin-top: auto; */
+  font-size: 1.5rem;
+  margin: auto;
+}
+/* *********************************************************************************************** */
+
+/* Sign up page */
+.signup{
+    /* display: flex; */
+    height: 90vh;
+    width: 100%;
+    background-image: url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: coral;
+    margin-top: 2rem;
+}
+
+.signup p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: greenyellow;
+}
+
+.main_form{
+ 
+    height: 50vh;
+    width: 50%;
+    border: 2px solid black;
+    margin-left: 20rem;
+    margin-top: 3rem;
+    background-image: url(/images/hotel1.webp);
+    background-size: cover;
+    box-shadow: 4px 5px 8px rgba(0,0,0,0.4);
+}
+
+.form-input{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 1rem;
+    /* background-color: black; */
+}
+
+.form-input input{
+    width: 40%;
+    height: 5vh;
+}
+
+
+
+.form-gender{
+    height:2rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5rem;
+}
+
+.form-gender input[type="radio"]{
+    font-size: 5rem;
+}
+
+.form-gender label{
+    color: red;
+}
+
+input::placeholder{
+    text-align: center;
+    background-color:grey;
+    color: whitesmoke;
+}
+/* *********************************************************************************************************** */
+/* login page */
+.login_page{
+    height: 80vh;
+    width: 100%;
+    background-image: url(/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     display: flex; 
+     align-items: center;
+     justify-content: center; 
+}
+.main_page{
+    height: 60vh;
+    width: 40%;
+    background-image: url(/images/hotel3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0%1rem;
+}
+
+.login_page .main_page .profile_page{
+    height: 50%;
+    width: 40%;
+    margin-left: 10rem;
+    background-color: white;
+    background-image: url(/images/dp.webp);
+    border-radius: 2px solid black;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+}
+
+.login_page .main_page .content_page{
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+
+.login_page .main_page .content_page .email_id input{
+    width: 20vw;
+    height: 5vh;
+}
+.login_page .main_page .content_page .pass_id input{
+    width: 20vw;
+    height: 5vh;
+}
+
+.pass_id{
+    margin-top: 1rem;
+}
+
+.submit_id{
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+.submit_id input{
+    width: 10vw;
+    padding: .6rem;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.submit_id input:hover{
+    color: black;
+    background-color: white;
+}
+/* *********************************************************************************************************************** */
+/* hotel page */
+.hotel_detail{
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.hotel_detail .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.hotel_detail .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.hotel_detail .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.hotel_detail .box-container .box img{
+    height:100px
+}
+
+.hotel_detail .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.hotel_detail .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.hotel_detail .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.hotel_detail .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.hotel_detail .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:2rem;
+    }
+}
+/* *********************************************************************************************************************** */
+
+/* Ticket booking site */
+.book_form{
+    min-height: 80vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.book_form .last_form{
+    height: 70vh;
+    width: 100%;
+    /* background-color: black; */
+}
+
+.book_form .last_form .form_left{
+    position: relative;
+    min-height: 80vh;
+    width: 50%;
+    background-image: url(/images/bg3.jpg);
+    /* background-color:green; */
+}
+.book_form .last_form .form_right{
+    min-height: 80vh;
+    width: 50%;
+    background-image: url(/images/bg3.jpg);
+    position: absolute;
+    top: 75px;
+    right: 0;
+}
+
+.book_form .form_left img{
+    height: 15rem;
+    margin-top:3rem
+}
+
+.book_form .last_form .form_right h1{
+    text-align: center;
+    font-size: 4rem;
+    color: brown;
+}
+
+.book_form .last_form .form_right h3{
+    text-align: center;
+    font-size: 2rem;
+    color: coral;
+}
+.box_form{
+    height: 50vh;
+    width: 60%;
+    border: 4px solid black;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.book_form .last_form .form_right .box_form h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.book_form .last_form .form_right .box_form .form_fill{
+    margin-left: 10rem;
+}
+
+.book_form .last_form .form_right .box_form .option{
+    margin-top: 2rem;
+}
+.book_form .last_form .form_right .box_form .book-ticket{
+    margin-top: 2rem;
+    padding: 1rem;
+    /* height: 2rem; */
+}
+
+.book_form .last_form .form_right .box_form .book-ticket input{
+    padding: 1rem;
+}
+
+.book_form .last_form .form_right .box_form .result p{
+    text-align: center;
+}
+
+    
+
+
+span{
+    color: red;
+    font-size: 2rem;
+}
+/* *************************************************************************** */
+/* contact page */
+.main_container{
+    height:80vh;
+    width: 100%;
+    background-image: url(/images/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    align-items: center;
+}
+
+.main_container .contact_page{
+    height: 60vh;
+    width: 80%;
+    background-image: url(/images/bg5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_container .contact_page .left_container{
+    width: 50%;
+    height: 100%;
+    /* background-color: orange; */
+    /* position: relative; */
+    text-align: center;
+   
+}
+
+.main_container .contact_page .left_container img {
+    height: 20vh;
+    width: 20vw;
+    margin-top: 5rem;
+}
+.main_container .contact_page .left_container h1{
+    font-size: 3rem;
+ color: purple;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: bolder;
+ margin-top: 1rem;
+}
+
+.main_container .contact_page .left_container a{
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+.main_container .contact_page .right_container{
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    font-size: 3rem;
+    color: aquamarine;
+    /* background-color: black; */
+    position: absolute;
+    top: 148px;
+    right: 150px;
+    margin-top: 1rem;
+}
+
+.main_container .contact_page .right_container .social_sites{
+    margin: 3rem;
+}
+
+.main_container .contact_page .right_container img{
+    height: 60px;
+    width: 60px;
+}
+/* ***************************************************************************************************** */
+/* error page */
+.errFig img{
+    height: 30vh;
+    width: 40vw;
+}
+/* **************************************************************************************************** */
+/* About page */
+
+.about_page{
+min-height: 80vh;
+width: 100%;
+/* background-color: red; */
+/* display: flex; */
+align-items: center;
+justify-content: center;
+background-color: lightblue;
+}
+
+.about_page .main_col{
+ height: 60vh;
+ width:80%;
+ background-color: green;
+ margin-left: 10vw;
+ margin-top: 1rem;
+
+ display: flex;
+}
+
+.about_page .main_col h1{
+    font-size: 5rem;
+    text-align: center;
+    color: brown;
+}
+
+.about_page .main_col p{
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+
+.about_page .main_col .left_page{
+   width: 50%;
+   height: 60vh;
+   background-color:blue;
+  margin-bottom: 1rem;
+}
+
+.about_page .main_col .right_page{
+     width: 50%;
+     height: 60vh;
+     background-color: burlywood;
+    
+}
+
+.about_page .main_col .first img{
+   height: 60vh;
+   width: 100%;
+}
+/* ****************************************************************************** */
+/* animation */
+.fa-snowflake{
+    margin-left: 1rem;
+    transition:all linear;
+    animation: rotate 1s linear infinite;
+    color: var(--main-color);
+}
+.left{
+    margin: 1rem;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}
