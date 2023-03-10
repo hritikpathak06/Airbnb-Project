@@ -19,9 +19,11 @@ app.use(express.urlencoded({extended:false}));
 app.set("view engine", "hbs");
 app.set("views", view_path);
 hbs.registerPartials(partial_path);
+app.use(cors());
 // *********************************************************************
 
 app.get("/", (req,res) => {
+    res.setHeader("Access-Control-Allow-Credentials","true");
     res.render("index");
 });
 
