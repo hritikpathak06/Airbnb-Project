@@ -25,9 +25,9 @@ app.get("/", (req,res) => {
     res.render("index");
 });
 
-// app.get("/hotels", (req,res) => {
-//     res.render("hotels")
-// });
+app.get("/hotels", (req,res) => {
+    res.render("hotels")
+});
 
 app.get("/register", (req,res) => {
     res.render("register")
